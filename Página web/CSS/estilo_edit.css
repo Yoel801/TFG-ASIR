@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f1f5f9; padding: 2rem; display: flex; justify-content: center; }
+        .card { background: white; padding: 2rem; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        input, textarea, select { width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.2rem; border-radius: 12px; border: 1px solid #cbd5e1; font-family: inherit; }
+        .btn-update { background: #1e40af; color: white; border: none; padding: 1rem; border-radius: 50px; width: 100%; font-weight: 700; cursor: pointer; }
+        .btn-anular { background: #ef4444; color: white; border: none; padding: 1rem; border-radius: 50px; width: 100%; font-weight: 700; cursor: pointer; margin-top: 0.5rem; }
+        .alerta-exito { background: #dcfce7; color: #15803d; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; text-align: center; }
+        .alerta-error { background: #fee2e2; color: #b91c1c; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; text-align: center; }
