@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f1f5f9; color: #0f172a; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 2rem; }
+        .contenedor-crear { background: white; padding: 2.5rem; border-radius: 32px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; border: 1px solid #e2edf7; }
+        h2 { margin-bottom: 1.5rem; color: #1e40af; font-weight: 800; text-align: center; font-size: 1.8rem; }
+        .grupo-input { margin-bottom: 1.2rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.85rem; color: #475569; }
+        input[type="text"], input[type="email"], textarea, select { width: 100%; padding: 0.8rem 1rem; border-radius: 15px; border: 1.5px solid #cbd5e1; font-family: inherit; outline: none; transition: all 0.2s; font-size: 0.95rem; }
+        input:focus, textarea:focus, select:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        textarea { height: 100px; resize: none; }
+        .btn-enviar { width: 100%; padding: 1rem; background: #1e40af; color: white; border: none; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.2s; margin-top: 1rem; font-size: 1rem; }
+        .btn-enviar:hover { background: #1e3a8a; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3); }
+        .btn-cancelar { display: block; text-align: center; margin-top: 1.5rem; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 600; transition: 0.2s; }
+        .btn-cancelar:hover { color: #0f172a; }
+        .alerta-exito { background: #dcfce7; color: #15803d; padding: 1rem; border-radius: 15px; margin-bottom: 1.5rem; text-align: center; font-size: 0.9rem; font-weight: 600; }
+        .alerta-error { background: #fee2e2; color: #b91c1c; padding: 1rem; border-radius: 15px; margin-bottom: 1.5rem; text-align: center; font-size: 0.9rem; font-weight: 600; }
