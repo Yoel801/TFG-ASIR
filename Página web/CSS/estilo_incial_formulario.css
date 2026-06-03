@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+
+:root {
+    /* Light mode */
+    --bg-gradient: linear-gradient(135deg, #f5f7fc 0%, #edf2f9 100%);
+    --card-bg: rgba(255, 255, 255, 0.96);
+    --text-main: #0b2b3d;
+    --text-muted: #5a6e7c;
+    --primary: #2266c7;
+    --primary-hover: #1a4f9e;
+    --input-bg: #ffffff;
+    --input-border: #cfdfed;
+    --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+    --accent-glow: rgba(34, 102, 199, 0.2);
+}
+
+body.dark-mode {
+    --bg-gradient: linear-gradient(135deg, #0f1724 0%, #111827 100%);
+    --card-bg: #1e293b;
+    --text-main: #eef2ff;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --primary-hover: #60a5fa;
+    --input-bg: #0f172a;
+    --input-border: #334155;
+    --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 20px 35px -10px rgba(0, 0, 0, 0.4);
+    --accent-glow: rgba(59, 130, 246, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    transition: background 0.3s ease, color 0.2s ease;
+}
+
+.btn-tema {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--input-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 60px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 100;
+    font-family: inherit;
+}
+
+.btn-tema:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+#login {
+    background: var(--card-bg);
+    backdrop-filter: blur(2px);
+    padding: 2.2rem 2rem;
+    border-radius: 32px;
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 440px;
+    transition: background 0.3s ease, transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#login:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    background: linear-gradient(120deg, var(--primary), #5f9eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: -0.3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.grupo-input label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    color: var(--text-muted);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1.5px solid var(--input-border);
+    border-radius: 20px;
+    font-size: 0.95rem;
+    background: var(--input-bg);
+    color: var(--text-main);
+    transition: all 0.2s;
+    outline: none;
+    font-family: inherit;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.boton_enviar {
+    background: var(--primary);
+    border: none;
+    padding: 0.9rem;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 12px rgba(34, 102, 199, 0.3);
+}
+
+.boton_enviar:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(59, 130, 246, 0.4);
+}
+
+.zona-registro {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.boton_registro {
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.boton_registro:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: scale(1.02);
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    opacity: 0.7;
+}
