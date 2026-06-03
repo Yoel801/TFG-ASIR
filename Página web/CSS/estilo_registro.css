@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap');
+
+:root {
+    --bg-gradient: linear-gradient(125deg, #f0f4fe 0%, #e9eff8 100%);
+    --card-bg: #ffffff;
+    --text-main: #1a2c3e;
+    --text-muted: #5e727f;
+    --primary: #2266c7;
+    --primary-hover: #1a4f9e;
+    --input-border: #cbdde9;
+    --shadow-card: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main {
+    width: 100%;
+    max-width: 480px;
+}
+
+#registro {
+    background: var(--card-bg);
+    border-radius: 36px;
+    padding: 2rem 2rem 2.2rem;
+    box-shadow: var(--shadow-card);
+    transition: all 0.2s;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(130deg, #2266c7, #4895ef);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.9rem 1rem;
+    border: 1.5px solid var(--input-border);
+    border-radius: 28px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: 0.2s;
+    outline: none;
+    background: #fefefe;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(34, 102, 199, 0.15);
+}
+
+.boton_registro {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 0.5rem;
+    box-shadow: 0 6px 14px rgba(34, 102, 199, 0.25);
+}
+
+.boton_registro:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.boton_salida {
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.boton_salida a {
+    display: inline-block;
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    padding: 0.6rem 1.3rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: 0.2s;
+}
+
+.boton_salida a:hover {
+    background: var(--primary);
+    color: white;
+}
