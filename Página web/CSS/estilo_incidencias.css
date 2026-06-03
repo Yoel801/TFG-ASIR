@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #f1f5f9; 
+            padding: 2rem; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .barra-superior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 2rem auto;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .btn-volver-top {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: #1e40af;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: 0.2s;
+            border: 1px solid #e2edf7;
+        }
+
+        .contenedor-buscador {
+            position: relative;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+
+        .input-buscador {
+            width: 100%;
+            padding: 0.7rem 1rem 0.7rem 2.5rem;
+            border-radius: 40px;
+            border: 1px solid #cbd5e1;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .icono-lupa {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h1 { 
+            text-align: center; 
+            color: #1e40af; 
+            margin-bottom: 2rem; 
+            font-weight: 800; 
+            font-size: 2.2rem;
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto;
+            flex-grow: 1;
+            width: 100%;
+        }
+        
+        .card { 
+            background: white; 
+            border-radius: 30px; 
+            padding: 1.5rem; 
+            border: 1px solid #e2edf7; 
+            border-top: 6px solid #ccc; 
+            display: flex; 
+            flex-direction: column; 
+            transition: transform 0.2s; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+        }
+        
+        .card:hover { transform: translateY(-5px); }
+        .Pendiente { border-top-color: #ef4444; }
+        .En-proceso { border-top-color: #eab308; }
+        
+        .card h2 { color: #0c4a6e; font-size: 1.25rem; margin-bottom: 1rem; }
+        .info { font-size: 0.95rem; color: #475569; margin-bottom: 5px; }
+        .info b { color: #1e293b; width: 80px; display: inline-block; }
+        
+        .pie-tarjeta { margin-top: auto; padding-top: 1.5rem; }
+
+        .btn-rust { 
+            background: #f34b00; 
+            color: white; 
+            padding: 0.9rem; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            text-align: center; 
+            font-weight: bold; 
+            display: block;
+            transition: 0.2s;
+        }
+        
+        .btn-rust:hover { background: #c23b00; }
+
+        .alerta-inventario {
+            color: #666; 
+            font-style: italic;
+            background: #f1f5f9;
+            padding: 0.9rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        
+        footer { 
+            margin-top: 3rem; 
+            text-align: center; 
+            color: #64748b; 
+            font-size: 0.85rem; 
+            border-top: 1px solid #cbd5e1; 
+            padding-top: 1.5rem; 
+            padding-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .barra-superior { flex-direction: column-reverse; align-items: stretch; }
+            .contenedor-buscador { max-width: 100%; }
+        }
